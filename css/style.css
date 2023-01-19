@@ -1,0 +1,575 @@
+/***** GENERALES *****/
+html {
+    width: 100%;
+    height: 100%;
+}
+.marginSection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.centrar {
+    text-align: center;
+}
+.tituloBordo {
+    color: #58161E;
+    font-family: 'Playfair Display', serif;
+}
+.boldFont {
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+}
+/***** HEADER *****/
+header nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+}
+nav .navbar-brand {
+    margin-left: 50px;
+}
+.navbar-collapse {
+    justify-content: center;
+}
+.navbar-nav a {
+    color: #9b2a37 !important;
+}
+.navbar-nav a:hover {
+    color: #58161E !important;
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+}
+.logo2 {
+    margin-left: 10px;
+}
+.rrss {
+    margin-left: 10px;
+}
+.rrss2{
+    display: none;
+}
+
+/***** FOOTER *****/
+footer {
+    background-color: #cdac79;
+}
+footer p{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+footer a {
+    text-decoration: none;
+    color: white !important;
+}
+.paddingFooter {
+    padding-bottom: 40px !important;
+}
+.sobreNosotros {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/***** BIENVENIDA *****/
+#bienvenida {
+    background-image: url("/images/biblia.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 760px;
+    width: 100%;
+}
+#bienvenida h1 {
+    font-size: 64px;
+    color: #58161E;
+    opacity: 100%;
+}
+#bienvenida p {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    color: #917591;
+}
+.textoInicial {
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+
+/***** PRODUCTOS *****/
+#productos {
+    padding: 0px;
+    height: 100%;
+    margin-bottom: 30px;
+    scroll-margin-top: 4em;
+}
+#productos h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    background-color: #784c78;
+    height: 200%;
+    margin: 0px;
+    padding: 80px 0px 50px 10%;
+}
+.fondo {
+    position: absolute;
+    background-color: #784c78;
+    height: 15%;
+    width: 100%;
+    margin-top: 0px;
+}
+/***Carrousel***/
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    height: 120%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slide {
+    height: 250px;
+    width: 250px;
+    margin-left: 20px;
+}
+.nombreProducto {
+    color: #784c78;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -20px;
+}
+.botonTienda {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #58161E;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 3px 1px black;
+}
+.botonTienda :hover{
+    color: black;
+    font-weight: bold;
+}
+.botonTienda a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #58161E;
+}
+
+/***** BLOG YOUTUBE *****/
+#informativo {
+    scroll-margin-top: 4.7em;
+}
+
+#informativo .row {
+    justify-content: space-around;
+}
+#informativo h1 {
+    margin: 0px;
+    padding: 20px 0px 50px 10%;
+}
+#informativo p{
+    font-size: 2rem;
+}
+#informativo p a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#informativo p a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: #9b2a37;
+}
+#informativo .cuadroTexto{
+    background-color: #58161E;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#informativo .cuadroTexto span a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#informativo .cuadroTexto a:hover{
+    color: rgba(255, 253, 253, 0.801);
+}
+.divImgeninformativo{
+    text-align: center;
+    margin-top: 30px;
+}
+.imgeninformativo{
+    width: 90%;
+}
+
+/***** NOSOTROS *****/
+
+#nosotros {
+    scroll-margin-top: 3.8em;
+}
+
+#nosotros .historia {
+    background-color: #f7ebf7;
+}
+
+.historiaTexto {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+#nosotros .row {
+    justify-content: space-around;
+}
+#nosotros h1 {
+    margin-left: 0px;
+    padding: 40px 0px 0px 10%;
+}
+.historia p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+}
+.conocenos {
+    text-align: center;
+}
+.conocenos h1 {
+    text-align: left;
+}
+.nombreApellido {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #cdac79;
+}
+.socios {
+    font-size: 16px;
+}
+
+/***** UBICACION *****/
+#ubicacion {
+    background-color: #cdac79;
+    scroll-margin-top: 4em;
+}
+
+#ubicacion .ubicacion {
+    justify-content: space-around;
+    margin-left: 102px;
+    margin-right: 122px;
+    padding: 56px 0px 70px;
+}
+#ubicacion h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 50px;
+    color: #fffcff;
+}
+#ubicacion p {
+    font-family: 'Oxygen', sans-serif;
+    color: #fffcff;
+    font-size: 24px;
+    font-style: normal;
+}
+#ubicacion img {
+    margin-right: 2%;
+}
+.atencion {
+    padding-left: 6.5%;
+}
+.datosUbicacion2{display: none;}
+.colorIcono {
+    color: white;
+}
+
+/***** CONTACTO *****/
+#contacto {
+    background-color: #e2d4e2;
+}
+.formularioContacto1{
+    display: none;
+}
+#contacto .formulario {
+    justify-content: space-around;
+    border-radius: 0px;
+    margin-left: 120px;
+    margin-right: 122px;
+    padding: 18px 0px 49px;
+}
+#contacto .formulario label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#contacto h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 50px;
+    color: #58161E;
+    text-align: left;
+}
+#contacto p {
+    color: #58161E;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+}
+#contacto img {
+    margin-right: 2%;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+.nombreFormulario {
+    padding-left: 0.5rem;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #eff0f6;
+    font-weight: bold;
+    margin-top: 10px;
+    width: auto;
+    height: 56px;
+}
+.emailFormulario {
+    padding-left: 0.5rem;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #eff0f6;
+    font-weight: bold;
+    margin-top: 10px;
+    width: auto;
+    height: 56px;
+}
+.divBtnForm{
+    text-align: right;
+}
+.mensajeFormulario {
+    padding-left: 0.5rem;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #eff0f6;
+    font-weight: bold;
+    margin-top: 10px;
+    width: auto;
+    height: 128px;
+}
+.separacionLineas {
+    line-height: 30px;
+}
+.enviarFormulario {
+    text-align: center;
+    background-color: #58161E;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.btn-primary:hover {
+    color: black;
+    background-color: #58161E;
+    border-color: #58161E;
+}
+.seccionesUno {
+    margin-left: 5%;
+}
+.cardMargin {
+    margin: 5% 10% 3% 10%;
+}
+.personaldMargin {
+    margin: auto;
+}
+@media only screen and (max-width: 320px) {
+    .textoInicial{
+        width: 320px!important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    html{
+        width: auto;
+    }
+    nav button{
+        margin-right: 10px;
+    }
+    #contacto .formulario {
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 18px 0px 49px;
+    }
+    #bienvenida{
+        height: 500px;
+        background-position: center;
+        background-color: white;
+    }
+    #bienvenida h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    h1{
+        font-size: 35px;
+        padding: 10px 0px 10px 10px!important;
+    }
+    #contacto p{
+        font-size: 20px;
+    }
+    #ubicacion p{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 20px;
+    }
+    .textoInicial{
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        width: 100%;
+    }
+    .sinPadding{
+        padding:0px;
+    }
+    .logo{
+        width: 40px;
+    }
+    .logo2{
+        width: 120px;
+    }
+    .historiaTexto p{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logoEsmalte{
+        padding: 10px;
+        width: 320px;
+        margin: 0px;
+    }
+    nav .navbar-brand{
+        margin-left: 5%;
+    }
+    header li{ 
+        padding-left: 15px;
+    }
+    header .container-fluid{
+        padding: 0;
+        justify-content: space-between;
+    }
+    iframe{
+        width: 100%;
+        padding: 0px!important;
+    }
+    #ubicacion .ubicacion{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .seccionesUno{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #contacto .formulario{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sinPadding{padding: 100px;}
+    .textoInicial{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+    }
+    .seccionesUno{
+        margin-left: 0px;
+    }
+    .logoEsmalte{
+        padding: 10px;
+        width: auto;
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1340px) {
+    #contacto .formulario{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sinPadding{padding: 100px;}
+    .textoInicial{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+    }
+    .seccionesUno{
+        margin-left: 0px;
+    }
+    .logoEsmalte{
+        padding: 10px;
+        width: 100%;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .rrss{
+        display: none;
+    }
+    .rrss2{
+        display: inline-block;
+        margin: 10px;
+    }
+    #bienvenida{
+        background-position: center;
+        background-color: white;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .datosUbicacion1{
+        display: none;
+    }
+    .datosUbicacion2{
+        margin-top: 30px;
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 767px) {
+
+    .formularioContacto2{
+        display: none;
+    }
+    .formularioContacto1{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .formularioContacto1 h1{
+        margin-bottom: 0px;
+    }
+    fieldset{
+        padding-top: 0px;
+    }
+    .h1Contacto{
+        display: none;
+    }
+}
