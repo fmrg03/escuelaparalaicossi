@@ -8,7 +8,7 @@ html {
     margin-bottom: 40px;
 }
 .centrar {
-    text-align: center;
+    text-align: center!important;
 }
 .alignCenter{
     align-items: center;
@@ -202,25 +202,27 @@ footer a {
     text-decoration: none;
     color: #9b2a37;
 }
-#informativo .cuadroTexto{
-    background-color: #58161E;
-    border-radius: 20px;
-    text-align: center;
-    padding: 2rem;
-}
 
-#informativo .cuadroTexto a{
+#informativo .cuadroTexto{
+    display: flex;
+    justify-content: center;
+    text-align: center!important;
+    align-items: center;
     font-weight: bold;
+    background-color: #58161E;
     text-decoration: none;
     color: white;
+    border-radius: 20px;
     font-size: 1.5rem;
+    width: 100%;
+    height: 90px;
 }
 
 .buttonMid a{
     font-size: 1.2rem!important;
 }
 
-#informativo .cuadroTexto a:hover{
+#informativo .cuadroTexto:hover{
     color: rgba(255, 253, 253, 0.801);
 }
 .cuadroInscripcion{
