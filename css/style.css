@@ -10,6 +10,9 @@ html {
 .centrar {
     text-align: center;
 }
+.alignCenter{
+    align-items: center;
+}
 .tituloBordo {
     color: #58161E;
     font-family: 'Playfair Display', serif;
@@ -76,7 +79,7 @@ footer a {
 
 /***** BIENVENIDA *****/
 #bienvenida {
-    background-image: url("/images/biblia.png");
+    background-image: url("/images/biblia2.png");
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -203,6 +206,7 @@ footer a {
     background-color: #58161E;
     border-radius: 20px;
     text-align: center;
+    padding: 2rem;
 }
 
 #informativo .cuadroTexto a{
@@ -210,6 +214,10 @@ footer a {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+}
+
+.buttonMid a{
+    font-size: 1.2rem!important;
 }
 
 #informativo .cuadroTexto a:hover{
@@ -296,7 +304,13 @@ footer a {
     margin-right: 122px;
     padding: 56px 0px 70px;
     align-items: center;
+    text-align: center;
 }
+
+.cursosyTalleres p{
+    font-size: 1.2rem!important;
+}
+
 #datosCursos .h {
     font-family: 'Playfair Display', serif;
     font-style: normal;
